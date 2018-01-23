@@ -9,6 +9,7 @@
   "author": "Michael Vogt",
   "license": "MIT",
   "dependencies": {
-    "nesnes": "^0.3.1"
+    "nesnes": "^0.3.1",
+    "pureimage": "^0.1.3"
   }
 }

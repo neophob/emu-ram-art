@@ -1,0 +1,14 @@
+{
+  "name": "emu-ram-art",
+  "version": "1.0.0",
+  "description": "create nice looking posters from emulator ram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Vogt",
+  "license": "MIT",
+  "dependencies": {
+    "nesnes": "^0.3.1"
+  }
+}

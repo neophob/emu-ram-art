@@ -4,11 +4,23 @@ import test from 'ava';
 
 import visualiseLib from '../../../lib/visualise/lib.js';
 
-test('visualiseLib: should split', (t) => {
+test('visualiseLib: should buildModel', (t) => {
   // GIVEN
   const input = JSON.stringify(dumpData);
   // WHEN
   const result = visualiseLib.buildModel(input);
+  // THEN
+  t.is(result.length, 2048);
+  t.deepEqual(result[0], [0, 36, 36]);
+  t.deepEqual(result[1], [6, 0, 0]);
+});
+
+test('visualiseLib: should buildModel', (t) => {
+  // GIVEN
+  const input = JSON.stringify(dumpData);
+  const model = visualiseLib.buildModel(input);
+  // WHEN
+  const result = visualiseLib.fillSlots(model, 8, 0);
   // THEN
   t.is(result.length, 2048);
   t.deepEqual(result[0], [0, 36, 36]);

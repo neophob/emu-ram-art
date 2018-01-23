@@ -1,5 +1,8 @@
 # emu-ram-art
 
+What?
+
+
 Run `npm install` to install needed deps.
 
 # NES
@@ -23,3 +26,7 @@ node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-17999.json
 - support more emulators
 - more flexible visualizer (layout, add rom name, framelength)
 - using the js canvas lib is not the fastest when rendering
+
+## FAQ
+
+- Where can I find ROM files: Official answer "dump the cartridges you own"

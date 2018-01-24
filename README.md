@@ -1,8 +1,10 @@
-# emu-ram-art :floppy_disk:
+# emu-ram-art :sparkles:
 
 Create nice looking diagrams from emulator rom and visualise its content.
 
-![image](/images/dump-Prince of Persia (U).nes-18000.json_1000.png)
+Example image of the Prince of Persia ROM at frame 1000.
+
+![image](/examples/pop.png)
 
 
 Run `npm install` to install needed deps.
@@ -31,10 +33,10 @@ DEBUG="*" node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-179
 
 ## TODO
 
-- support more emulators
+- support more emulators (Sinclair, GameBoy, C64)
 - more flexible visualizer (layout, framelength)
 - improve rendering speed: using the js canvas lib is not the fastest when rendering
-- the current detection of interesting diagrams is rather primitive (filterSlots function), lots of other improvements possible
+- the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible
 - add optional header text
 - bells'n whistles build process (moar tests, CI integration)
 

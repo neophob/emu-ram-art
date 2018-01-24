@@ -35,7 +35,6 @@ DEBUG="*" node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-179
 
 - support more emulators (Sinclair, GameBoy, C64)
 - more flexible visualizer (layout, framelength)
-- improve rendering speed: using the js canvas lib is not the fastest when rendering
 - the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible
 - add optional header text
 - bells'n whistles build process (moar tests, CI integration)

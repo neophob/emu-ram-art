@@ -24,10 +24,10 @@ test('visualiseLib: fillSlots should remove duplicate entries', (t) => {
     [ 5, 5, 6, 7 ],
   ];
   // WHEN
-  const result = visualiseLib.fillSlots(fakeModelData, 2, 0, 0.8);
+  const result = visualiseLib.filterSlots(fakeModelData, 2, 0, 0.8);
   // THEN
-  t.is(result.length, 5);
-  t.deepEqual(result, [ [ 0, 1 ], [ 0, 0 ], [ 5, 5 ], [ 2, 3 ], [ 6, 7 ] ]);
+  t.is(result.length, 3);
+  t.deepEqual(result, [ [ 0, 1, 2, 3 ], [ 0, 0, 0, 0 ], [ 5, 5, 6, 7 ] ]);
 });
 
 test('visualiseLib: fillSlots should remove flat lines', (t) => {
@@ -43,7 +43,7 @@ test('visualiseLib: fillSlots should remove flat lines', (t) => {
     [ 1, 1, 1, 1, 1, 1, 1, 0 ],
   ];
   // WHEN
-  const result = visualiseLib.fillSlots(fakeModelData, 8, 0, 0.5);
+  const result = visualiseLib.filterSlots(fakeModelData, 8, 0, 0.5);
   // THEN
   t.is(result.length, 3);
   t.deepEqual(result, [
@@ -51,6 +51,20 @@ test('visualiseLib: fillSlots should remove flat lines', (t) => {
     [ 1, 1, 1, 1, 0, 0, 0, 0 ],
     [ 1, 1, 1, 1, 1, 0, 0, 0 ]
   ]);
+});
+
+test('visualiseLib: fillSlots should fail if missing parameters', (t) => {
+  const error = t.throws(() => {
+		visualiseLib.filterSlots();
+	});
+	t.is(error.message, 'INVALID_PARAMETER');
+});
+
+test('visualiseLib: fillSlots should fail if missing parameters', (t) => {
+  const error = t.throws(() => {
+		visualiseLib.filterSlots(1,2,3);
+	});
+	t.is(error.message, 'INVALID_PARAMETER');
 });
 
 const realModelData = [{

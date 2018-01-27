@@ -9,7 +9,7 @@ Example image of the Prince of Persia ROM at frame 1000.
 
 Run `npm install` to install needed deps.
 
-# NES
+## NES
 
 Some facts:
 - has 2kb onboard ram
@@ -21,9 +21,17 @@ Good example ROM's for RAM images:
 Good example ROM's for VRAM images:
 - ZZZ_UNK_Bo Jackson Baseball (Bad CHR 02ef4f34).nes
 
+## GameBoy
+
+Some facts:
+- has 8kb onboard ram
+- has 8kb video ram - this is however pretty boring to visualise
+
+# HOWTO
+
 ## Step 1: Dump ROM
 
-Example - dump a new ROM:
+Dump a new ROM:
 
 ```
 node ./lib/dump-nes/index.js Mario\ Bros.\ \(JU\)\ \[!\].nes 18000
@@ -53,7 +61,7 @@ Then run `./_build.sh`
 
 ## TODO
 
-- support more emulators (Sinclair, GameBoy, C64)
+- support more emulators (Sinclair, C64)
 - NES: load optional cartridge memory
 - more flexible visualizer (layout, framelength)
 - the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible

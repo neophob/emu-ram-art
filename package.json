@@ -12,6 +12,7 @@
     "canvas": "^2.0.0-alpha.9",
     "debug": "^3.1.0",
     "nesnes": "^0.3.1",
+    "node-gameboy": "^0.3.2",
     "nyc": "^11.4.1"
   },
   "devDependencies": {

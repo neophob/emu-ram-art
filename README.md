@@ -4,7 +4,7 @@ Create nice looking diagrams from emulator rom and visualise its content.
 
 Example image of the Prince of Persia ROM at frame 1000.
 
-![image](/examples/pop.png)
+![image](/examples/example.png)
 
 
 Run `npm install` to install needed deps.
@@ -34,7 +34,10 @@ DEBUG="*" node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-179
 ### Batch process
 
 Process a bunch of rom files with
+
 `for f in ROMDIRECTORY/*; do node lib/dump-nes/index.js "$f"; done`
+
+Then run `./_build.sh`
 
 ## TODO
 

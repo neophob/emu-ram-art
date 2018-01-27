@@ -31,8 +31,9 @@ Note: you can run the script in debug mode by using
 DEBUG="*" node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-17999.json
 ```
 
-### Mass process
+### Batch process
 
+Process a bunch of rom files with
 `for f in ROMDIRECTORY/*; do node lib/dump-nes/index.js "$f"; done`
 
 ## TODO

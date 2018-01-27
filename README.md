@@ -11,6 +11,16 @@ Run `npm install` to install needed deps.
 
 # NES
 
+Some facts:
+- has 2kb onboard ram
+- has 2kb video ram - this is however pretty boring to visualise
+
+Good example ROM's for RAM images:
+- Contra (U) [!].nes
+
+Good example ROM's for VRAM images:
+- ZZZ_UNK_Bo Jackson Baseball (Bad CHR 02ef4f34).nes
+
 ## Step 1: Dump ROM
 
 Example - dump a new ROM:
@@ -33,15 +43,18 @@ DEBUG="*" node lib/visualise/index.js ./dump-Mario\ Bros.\ \(JU\)\ \[!\].nes-179
 
 ### Batch process
 
-Process a bunch of rom files with
+Process a bunch of rom files (serial) with
+`for f in ./ROMDIRECTORY/*; do node lib/dump-nes/index.js "$f"; done`
 
-`for f in ROMDIRECTORY/*; do node lib/dump-nes/index.js "$f"; done`
+.. or parallel:
+`find ./ROMDIRECTORY -name '*.nes' | parallel -j 8 node lib/dump-nes/index.js {}`
 
 Then run `./_build.sh`
 
 ## TODO
 
 - support more emulators (Sinclair, GameBoy, C64)
+- NES: load optional cartridge memory
 - more flexible visualizer (layout, framelength)
 - the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible
 - bells'n whistles build process (moar tests, CI integration)

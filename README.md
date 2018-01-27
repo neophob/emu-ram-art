@@ -44,7 +44,6 @@ Then run `./_build.sh`
 - support more emulators (Sinclair, GameBoy, C64)
 - more flexible visualizer (layout, framelength)
 - the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible
-- add optional header text
 - bells'n whistles build process (moar tests, CI integration)
 
 ## FAQ

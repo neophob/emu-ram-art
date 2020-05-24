@@ -9,7 +9,7 @@
   "author": "Michael Vogt",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^2.0.0-alpha.9",
+    "canvas": "^2.6.1",
     "debug": "^3.1.0",
     "nesnes": "neophob/nesnes",
     "node-gameboy": "^0.3.2",

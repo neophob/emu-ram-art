@@ -7,7 +7,7 @@ Example image of the Prince of Persia ROM at frame 1000.
 ![image](/examples/example.png)
 
 
-Run `npm install` to install needed deps.
+Run `npm install` to install needed deps. Use Node 8 (v8.11.2).
 
 ## NES
 

@@ -2,7 +2,7 @@
 
 Create nice looking diagrams from emulator rom and visualise its content.
 
-Example image of the Prince of Persia ROM at frame 1000.
+Example image of the Onyanko Town ROM at frame 10000.
 
 ![image](/examples/example.png)
 

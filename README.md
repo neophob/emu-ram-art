@@ -7,7 +7,7 @@ Example image of the Onyanko Town ROM at frame 10000.
 ![image](/examples/example.png)
 
 
-Run `npm install` to install needed deps. Use Node 8 (v8.11.2).
+Run `npm install` to install needed deps. Use Node 10 and make sure that you have cairo installed on your system!
 
 ## NES
 
@@ -61,7 +61,7 @@ Then run `./_build.sh`
 
 ## TODO
 
-- support more emulators (Sinclair, C64)
+- RAM DUMPS: support more emulators (Sinclair, C64)
 - NES: load optional cartridge memory
 - more flexible visualizer (layout, framelength)
 - the current selection of interesting diagrams is rather primitive (`filterSlots` function), lots of other improvements possible

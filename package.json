@@ -10,11 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "canvas": "^2.6.1",
-    "debug": "^3.1.0",
+    "debug": "4.2.0",
     "nesnes": "neophob/nesnes",
     "node-gameboy": "^0.3.2",
     "nyc": "^11.4.1",
-    "wpc-emu": "^0.35.2"
+    "wpc-emu": "^0.35.3"
   },
   "devDependencies": {
     "ava": "^0.24.0"

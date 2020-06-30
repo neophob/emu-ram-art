@@ -14,7 +14,7 @@
     "nesnes": "neophob/nesnes",
     "node-gameboy": "^0.3.2",
     "nyc": "^11.4.1",
-    "wpc-emu": "^0.35.1"
+    "wpc-emu": "^0.35.2"
   },
   "devDependencies": {
     "ava": "^0.24.0"

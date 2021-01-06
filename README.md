@@ -6,8 +6,9 @@ Example image of the Onyanko Town ROM at frame 10000.
 
 ![image](/examples/example.png)
 
-
 Run `npm install` to install needed deps. Use Node 10 and make sure that you have cairo installed on your system!
+
+WARNING! This repo contains extreme ugly code! no refactoring, no cleanup but spaghetti code at its finest! Main purpose of this code is to generate an art print - once this is done there is no reason to touch the code anymore ;)
 
 ## NES
 

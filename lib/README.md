@@ -5,6 +5,7 @@
 - `dump-nes`: create memory dump of a NES game
 - `dump-wpc`: create memory dump of a Williams Pinball game
 - `visualise`: create a diagram of a memory dump
+- `wpc-storyteller`: cpu CC register dumper (`index.js`) and renderer (`poster.js`)
 
 WARNING:
 - this code is extremly ugly

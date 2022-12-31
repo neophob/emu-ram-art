@@ -17,7 +17,7 @@
     "wpc-emu": "^0.35.8"
   },
   "devDependencies": {
-    "ava": "^0.24.0"
+    "ava": "^5.1.0"
   },
   "nyc": {
     "check-coverage": false,
